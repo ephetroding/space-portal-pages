@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爱游戏 · 平台介绍</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background: #fafafa;
+            color: #1a1a1a;
+            line-height: 1.7;
+            padding: 2rem 1.2rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            max-width: 720px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        /* hero */
+        .hero {
+            padding: 3.2rem 0 2.6rem 0;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        .hero h1 {
+            font-size: 2.4rem;
+            font-weight: 500;
+            letter-spacing: -0.01em;
+            margin-bottom: 1rem;
+            color: #111;
+        }
+        .hero p {
+            font-size: 1.1rem;
+            color: #555;
+            max-width: 580px;
+            margin-top: 0.5rem;
+        }
+        .hero .tagline {
+            display: inline-block;
+            background: #eef2f5;
+            padding: 0.3rem 1rem;
+            border-radius: 40px;
+            font-size: 0.85rem;
+            color: #2a3b4c;
+            margin-bottom: 1.6rem;
+        }
+        /* section 通用 */
+        section {
+            padding: 2.8rem 0;
+            border-bottom: 1px solid #ececec;
+        }
+        section:last-of-type {
+            border-bottom: none;
+        }
+        h2 {
+            font-size: 1.55rem;
+            font-weight: 500;
+            margin-bottom: 1.2rem;
+            color: #1d1d1d;
+        }
+        h3 {
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            color: #2b2b2b;
+        }
+        p {
+            margin-bottom: 1.2rem;
+            color: #3b3b3b;
+        }
+        p.lead {
+            font-size: 1.05rem;
+            color: #2e2e2e;
+        }
+        /* 优势卡片 */
+        .grid-3 {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.6rem;
+            margin: 1.2rem 0 0.4rem;
+        }
+        @media (min-width: 500px) {
+            .grid-3 {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        .card {
+            background: #ffffff;
+            padding: 1.6rem 1.4rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.02), 0 1px 2px rgba(0,0,0,0.04);
+            transition: box-shadow 0.2s;
+        }
+        .card:hover {
+            box-shadow: 0 6px 14px rgba(0,0,0,0.03), 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .card p {
+            font-size: 0.95rem;
+            margin-bottom: 0;
+        }
+        .card .num {
+            font-size: 1.8rem;
+            font-weight: 300;
+            color: #9aa9b7;
+            display: block;
+            margin-bottom: 0.3rem;
+        }
+        /* FAQ 摘要 */
+        .faq-item {
+            margin-bottom: 1.2rem;
+        }
+        .faq-item .q {
+            font-weight: 500;
+            color: #1c1c1c;
+        }
+        .faq-item .a {
+            color: #4a4a4a;
+            margin-top: 0.2rem;
+            padding-left: 0.8rem;
+            border-left: 2px solid #d0d8e0;
+        }
+        /* 底部 */
+        .footer-note {
+            padding: 2rem 0 1rem;
+            font-size: 0.9rem;
+            color: #6b6b6b;
+            border-top: 1px solid #e5e5e5;
+            margin-top: 0.8rem;
+        }
+        .footer-note a {
+            color: #1f3a57;
+            text-decoration: none;
+            border-bottom: 1px solid #bcc9d6;
+        }
+        .footer-note a:hover {
+            border-bottom-color: #1f3a57;
+        }
+        .inline-link {
+            color: #1f3a57;
+            text-decoration: none;
+            border-bottom: 1px solid #cbd7e3;
+            font-weight: 450;
+        }
+        .inline-link:hover {
+            border-bottom-color: #1f3a57;
+        }
+        .muted {
+            color: #6d6d6d;
+            font-size: 0.95rem;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #eaeef2;
+            margin: 0.2rem 0 1.2rem;
+        }
+        @media (max-width: 460px) {
+            .hero h1 { font-size: 1.9rem; }
+            h2 { font-size: 1.3rem; }
+            .card { padding: 1.3rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <!-- hero -->
+    <div class="hero">
+        <span class="tagline">平台定位 · 游戏服务</span>
+        <h1>爱游戏：一个清晰的起点</h1>
+        <p>如果你正在寻找一个以游戏内容为核心的平台入口，那么这里就是那个被反复提及的名字。简洁、直接、没有冗余——<a href="https://asia-ssl-ayx.com" class="inline-link">爱游戏</a> 所呈现的，正是许多人最初期待的样子。</p>
+    </div>
+
+    <!-- 优势区：快速识别点 -->
+    <section>
+        <h2>为什么用户能一眼认出它</h2>
+        <p class="lead">对于新访客而言，第一印象往往取决于页面结构和信息层次。这个平台的设计倾向于减少干扰，让用途变得透明。</p>
+        <div class="grid-3">
+            <div class="card">
+                <span class="num">01</span>
+                <h3>直观的导航</h3>
+                <p>分类清晰，没有过度包装，从标题到内容区块都能快速理解功能方向。</p>
+            </div>
+            <div class="card">
+                <span class="num">02</span>
+                <h3>一致的视觉语言</h3>
+                <p>克制用色、均衡留白，让注意力自然落在核心信息上，而非装饰元素。</p>
+            </div>
+            <div class="card">
+                <span class="num">03</span>
+                <h3>内容优先</h3>
+                <p>文字和链接直接服务于用户决策，而不是堆砌无关素材。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 说明区：从用户视角叙述 -->
+    <section>
+        <h2>这个页面在讲述什么</h2>
+        <p>很多用户第一次打开网站时，会在几秒内判断是否与自己有关。<strong>爱游戏</strong> 的做法是把「这是什么」放在最前面——没有闪烁的口号，取而代之的是一段平实的介绍，以及你可以进一步探索的入口。</p>
+        <p>你看到的每一个区块都经过取舍：左侧是平台名称，右侧是功能摘要，中间是你可以自由选择的方向。如果你愿意花半分钟浏览，会发现它的结构比看上去更经得起推敲。</p>
+        <p style="margin-top: 0.8rem;">当然，最直接的方式还是通过 <a href="https://asia-ssl-ayx.com" class="inline-link">爱游戏</a> 本身去感受它的实际页面。所有描述都基于真实呈现。</p>
+    </section>
+
+    <!-- 场景提示 / 轻说明 -->
+    <section>
+        <h2>常见的几种使用场景</h2>
+        <div style="margin: 0.2rem 0 0.4rem;">
+            <p><strong>· 初次了解：</strong> 通过搜索或朋友推荐到达，想确认平台是否对味。<br>
+            <strong>· 功能对比：</strong> 同时打开几个同类站点，快速判断信息密度和风格。<br>
+            <strong>· 日常回访：</strong> 已经熟悉布局，直接找到常用模块或入口。</p>
+            <p class="muted" style="margin-top: 1rem;">每个场景下，页面的克制反而降低了认知负担。</p>
+        </div>
+    </section>
+
+    <!-- FAQ 摘要 -->
+    <section>
+        <h2>常见问题摘要</h2>
+        <div class="faq-item">
+            <div class="q">这个网站主要提供什么？</div>
+            <div class="a">一个以游戏为主题的平台入口，内容涵盖资讯、资源与社区互动方向，具体可在站内浏览了解。</div>
+        </div>
+        <div class="faq-item">
+            <div class="q">页面看起来很简单，信息够用吗？</div>
+            <div class="a">对于想快速识别平台用途的用户来说，简洁本身就是一种效率。更深度的内容在内部页面展开。</div>
+        </div>
+        <div class="faq-item">
+            <div class="q">如何确认这是官方渠道？</div>
+            <div class="a">直接访问 <a href="https://asia-ssl-ayx.com" class="inline-link">爱游戏</a>，域名与 SSL 配置均可查证。建议以实际页面为准。</div>
+        </div>
+        <p class="muted" style="margin-top: 1.2rem;">以上摘要基于站点公开信息整理，不构成任何承诺。</p>
+    </section>
+
+    <!-- 底部链接 + 说明 -->
+    <div class="footer-note">
+        <p>本文介绍页面仅用于说明平台风格与用途。如需直接访问，可点击 <a href="https://asia-ssl-ayx.com">爱游戏</a> 进入网站。所有描述力求客观，不夸大、不误导。</p>
+        <p style="margin-top: 0.8rem; font-size: 0.85rem; color: #888;">— 介绍页 · 内容独立撰写 —</p>
+    </div>
+
+</div>
+</body>
+</html>
